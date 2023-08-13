@@ -1,3 +1,5 @@
+
+
 /*
    Programa de prueba para la cabecera medeaWize.h
    Misael Reyes
@@ -5,10 +7,12 @@
 
 */
 #include "medeaWiz.h"
-//#include "Sprite.h"
+//#include <SoftwareSerial.h>
 
-byte answerSprite; 
+byte answerVal; 
 Sprite sprite(CMD_ADD_E1);
+//SoftwareSerial Serial1(8, 9); // RX, TX
+
 char c;
 void setup() {
 
@@ -21,12 +25,12 @@ void setup() {
 
 void loop() {
   
-  answerSprite = sprite.answerSprite();
+  answerVal = sprite.answerSprite();
 
-  if(answerSprite != 0)
+  if(answerVal != 0)
   {
     Serial.print(" Respuesta : 0x");
-    Serial.println(answerSprite,HEX);
+    Serial.println(answerVal,HEX);
   }
   
   if(Serial.available())
