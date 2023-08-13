@@ -5,6 +5,7 @@
 
 */
 #include "medeaWiz.h"
+//#include "Sprite.h"
 
 byte answerSprite; 
 Sprite sprite(CMD_ADD_E1);
