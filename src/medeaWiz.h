@@ -7,6 +7,8 @@ by Misael Reyes
 #ifndef  proyectil_MEDEAWIZ_H_
 #define  proyectil_MEDEAWIZ_H_
 
+#include <Arduino.h>
+
 #define CMD_REQUEST_NUMBER_OF_FILES   0xCB
 #define CMD_HDMI_720P_50              0xD6
 #define CMD_HDMI_720P_60              0xD7
